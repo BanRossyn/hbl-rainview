@@ -24,6 +24,13 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+//    publishing {
+//        multipleVariants{
+//            allVariants()
+//            withJavadocJar()
+//        }
+//    }
 }
 
 dependencies {
@@ -43,42 +50,42 @@ dependencies {
     implementation 'com.annimon:stream:1.2.2'
 }
 
-apply from: 'https://raw.githubusercontent.com/BanRossyn/RainView/main/maven-push.gradle'
+//apply from: 'https://raw.githubusercontent.com/BanRossyn/RainView/main/maven-push.gradle'
 
-//afterEvaluate {
-//
-//
-//    publishing {
-//        publications {
-//            release(MavenPublication) {
-//                from components.release
-//                groupId = 'com.banrossyn'
-//                artifactId = 'hbl-rainview'
-//                version = '1.0.0'
-//
-//
-//                pom {
-//
-//                    licenses {
-//                        license {
-//                            name = 'The Apache License, Version 2.0'
-//                            url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-//                        }
-//                    }
-//                    developers {
-//                        developer {
-//                            id = 'banrossyn'
-//                            name = 'Ban Rossyn'
-//                            email = 'banrossyn@gmail.com'
-//                        }
-//                    }
-//
-//                }
-//            }
-//        }
-//    }
-//
-//}
+afterEvaluate {
+
+
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.banrossyn'
+                artifactId = 'hbl-rainview'
+                version = 'android.defaultConfig.versionName'
+
+
+                pom {
+
+                    licenses {
+                        license {
+                            name = 'The Apache License, Version 2.0'
+                            url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                        }
+                    }
+                    developers {
+                        developer {
+                            id = 'banrossyn'
+                            name = 'Ban Rossyn'
+                            email = 'banrossyn@gmail.com'
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+}
 //publishing {
 //    publications {
 //        mavenJava(MavenPublication) {
