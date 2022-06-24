@@ -25,12 +25,21 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-//    publishing {
-//        multipleVariants{
-//            allVariants()
-//            withJavadocJar()
-//        }
-//    }
+
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+
+        multipleVariants {
+            withSourcesJar()
+            withJavadocJar()
+            allVariants()
+        }
+    }
+
+
 }
 
 dependencies {
