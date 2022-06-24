@@ -43,7 +43,8 @@ dependencies {
     implementation 'com.annimon:stream:1.2.2'
 }
 
-apply from: https://raw.githubusercontent.com/BanRossyn/RainView/main/maven-push.gradle
+apply from: 'https://raw.githubusercontent.com/BanRossyn/RainView/main/maven-push.gradle'
+
 //afterEvaluate {
 //
 //
