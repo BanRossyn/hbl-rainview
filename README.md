@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // bind view
-        mContainer = (EmojiRainLayout) findViewById(R.id.group_emoji_container);
+        mContainer = findViewById(R.id.group_emoji_container);
 
         // add emoji sources
         mContainer.addEmoji(R.drawable.e_eye_love);
