@@ -9,8 +9,8 @@ android {
         applicationId "com.banrossyn.hbl"
         minSdk 21
         targetSdk 32
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.0.2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -33,13 +33,11 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.4.2'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation project(path: ':Library')
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
-    //noinspection GradleCompatible
-    implementation 'com.android.support:percent:28.0.0'
-//    implementation "com.android.support:design:28.0.0"
 
+    implementation project(path: ':Library')
+    implementation 'androidx.percentlayout:percentlayout:1.0.0'
 }
