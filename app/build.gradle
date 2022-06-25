@@ -38,6 +38,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
 
-    implementation project(path: ':Library')
+
+    implementation 'com.github.banrossyn:hbl-rainview:1.0.3'
     implementation 'androidx.percentlayout:percentlayout:1.0.0'
 }
