@@ -110,12 +110,6 @@ Stop animation.
 ```java
 mContainer.stopDropping();
 ```
-<p align="center">
- <video controls="controls" width="1000" height="749">
-<source src="https://user-images.githubusercontent.com/97843190/175556509-fb88bb20-049c-4fcf-a9b3-e062a40c495d.mp4" type="video/mp4" />
- </video>
-</p>
-
 
 
 ## License
