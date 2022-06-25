@@ -39,6 +39,8 @@ Then, add the library to your module `build.gradle`
 ```gradle
 dependencies {
     implementation 'com.github.banrossyn:hbl-rainview:{latest_version}'
+    //You must use percentlayout Dependency
+    implementation 'androidx.percentlayout:percentlayout:1.0.0'
 }
 ```
 
@@ -57,7 +59,7 @@ Config in layout. `EmojiRainLayout` inherits from `FrameLayout`. You can just us
 
 ```xml
 <com.banrossyn.hbl.RainView.EmojiRainLayout
-        android:id="@+id/frist_fragment"
+        android:id="@+id/emojilayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -77,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // bind view
-        mContainer = findViewById(R.id.group_emoji_container);
+        mContainer = findViewById(R.id.emojilayout);
 
         // add emoji sources
         mContainer.addEmoji(R.drawable.e_eye_love);
