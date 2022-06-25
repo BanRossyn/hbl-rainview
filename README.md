@@ -11,10 +11,10 @@ Now you are able to add this funny thing to your own app as well. Give a surpris
 
 <p align="center">
     <a >
-      <img src="https://user-images.githubusercontent.com/97843190/175557605-d94809f7-7b9c-414f-b45c-aabeaae5ad31.jpg" width="1000" />
+    
+![](https://github.com/BanRossyn/hbl-rainview/blob/main/RainView.gif)
     </a>
   </p>
-
 
 
 
