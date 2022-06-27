@@ -2,7 +2,13 @@
   <h1 align="center">RainView Android Library</h1>
 </p>
 
-[![](https://jitpack.io/v/banrossyn/hbl-rainview.svg)](https://jitpack.io/#banrossyn/hbl-rainview)
+      
+ [![](https://jitpack.io/v/banrossyn/hbl-rainview.svg)](https://jitpack.io/#banrossyn/hbl-rainview)
+![GitHub all releases](https://img.shields.io/github/downloads/banrossyn/hbl-rainview/total?label=Downlaods)
+![GitHub](https://img.shields.io/github/license/banrossyn/hbl-rainview)
+
+
+
 
 This is a really simple animation for Android. You could find similar animations when sending "Happy birthday" or something else special in WeChat app.
 
